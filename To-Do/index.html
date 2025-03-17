@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>To-Do App</title>
+</head>
+<body>
+   <div class="heading">
+      <h1>Your Daily Tasks</h1>
+   </div>
+ 
+     <header>
+        <div>
+             <input type="date" id="filterdate" name="filterdate">
+        </div>
+        <div id="select-date">select a date</div>
+     </header>
+     <form id="task-form">
+        <label for="taskname">Task</label>
+        <input type="text" id="taskname" name="taskname" placeholder="Your Task..." required>
+        <label for="taskDate">Task Date</label>
+        <input type="date" id="taskDate" name="taskDate" required>
+        <label for="taskTime">Task Time</label>
+        <input type="time" id="taskTime" name="taskTime" required>
+        <button class="add-button" type="submit">Add Task</button>
+     </form>
+     <div id="taskList"></div>
+</body>
+<script src="script.js"></script>
+</html>

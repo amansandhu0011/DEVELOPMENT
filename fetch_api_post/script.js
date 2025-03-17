@@ -1,7 +1,8 @@
 document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
     
-    const formData = new FormData(event.target); // Use 'this' to reference the form
+    const formData = new FormData(event.target); 
+    console.log(formData);
     let getUserId = formData.get("userId"); 
     let getTitle = formData.get("title");
     let getBody = formData.get("body");
